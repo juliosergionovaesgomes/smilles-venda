@@ -6,7 +6,7 @@ const FixHeaderComponent = () => {
     const [minutos, setMinutos] = useState<number>()
     const [segundos, setSegundos] = useState<number>()
     const [mes] = useState(11)
-    const [diaDefault] = useState(24)
+    const [diaDefault] = useState(31)
 
     const contador = () => {
         let now = new Date();
