@@ -2,9 +2,10 @@ import React from "react";
 import image from "../../../assets/images/Thinking-Man-Transparent.jpeg";
 import mokup from "../../../assets/images/mokup.png";
 import selo from "../../../assets/images/selo.png";
-import { ChevronUpIcon } from '@heroicons/react/20/solid'
+
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import { GoCreditCard } from "react-icons/go";
+import { IoIosArrowUp } from "react-icons/Io";
 
 const modulos = [
     {
@@ -315,7 +316,7 @@ const Home = () => {
                                 <>
                                     <Disclosure.Button className="flex w-full justify-between rounded-lg bg-white px-4 py-2 text-left text-sm font-medium ">
                                         <span className="text-black text-lg">{item.title}</span>
-                                        <ChevronUpIcon
+                                        <IoIosArrowUp
                                             className={`${open ? 'rotate-180 transform' : ''
                                                 } h-5 w-5 text-black`}
                                         />
