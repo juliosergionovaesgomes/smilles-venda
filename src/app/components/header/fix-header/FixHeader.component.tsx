@@ -45,7 +45,7 @@ const FixHeaderComponent = () => {
     return (
         <header className="w-full h-20   flex justify-center items-center space-x-3 " style={{ background: '#f9004d' }}>
             <div>
-                <h1 className="text-black text-lg font-serif  ">AS VAGAS ENCERRAM EM :</h1>
+                <h1 className="text-black text-2xl font-bold  ">AS VAGAS ENCERRAM EM :</h1>
             </div>
             <div className="font-semibold text-black  flex flex-row space-x-3">
                 <span className="flex item-center justify-center flex-col text-center  -space-y-2">
