@@ -1,8 +1,8 @@
 import React from 'react'
-import { routes } from '../../../routes/route'
+import { routes } from '@src/routes/route'
 import { RouterProvider } from 'react-router-dom'
 import { FixHeader } from '../header'
-import backgroundURL from '../../../assets/images/Home.png'
+import backgroundURL from '@assets/images/Home.png'
 const LayoutComponent = () => {
   return (
     <div className='w-full ' style={{ backgroundImage: `url(${backgroundURL})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundColor: ' #1a1a1a' }}>
