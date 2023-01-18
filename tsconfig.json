@@ -3,11 +3,7 @@
     "baseUrl": "./",
     "target": "ESNext",
     "useDefineForClassFields": true,
-    "lib": [
-      "DOM",
-      "DOM.Iterable",
-      "ESNext"
-    ],
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": false,
@@ -21,23 +17,15 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "paths": {
-      "@app/*": [
-        "src/app/*"
-      ],
-      "@pages/*": [
-        "src/app/pages/*"
-      ],
-      "@components/*": [
-        "src/app/components/*"
-      ],
-      "@routes/*": [
-        "src/routes/*"
-      ]
+      "@app/*": ["./src/app/*"],
+      "@src/*": ["./src/*"],
+      "@pages/*": ["./src/app/pages/*"],
+      "@components/*": ["./src/app/components/*"],
+      "@routes/*": ["./src/routes/*"],
+      "@assets/*": ["./src/assets/*"]
     }
   },
-  "include": [
-    "src"
-  ],
+  "include": ["src"],
   "references": [
     {
       "path": "./tsconfig.node.json"

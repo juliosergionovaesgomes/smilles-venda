@@ -43,26 +43,26 @@ const FixHeaderComponent = () => {
     })
 
     return (
-        <header className="w-full h-20   flex justify-center items-center space-x-3 " style={{ background: '#f9004d' }}>
+        <header className="w-full h-20   flex justify-center flex-col sm:flex-row items-center space-x-3 " style={{ background: '#f9004d' }}>
             <div>
-                <h1 className="text-black text-2xl font-bold  ">AS VAGAS ENCERRAM EM :</h1>
+                <h1 className="text-black text-base sm:text-2xl font-bold  ">AS VAGAS ENCERRAM EM :</h1>
             </div>
             <div className="font-semibold text-black  flex flex-row space-x-3">
                 <span className="flex item-center justify-center flex-col text-center  -space-y-2">
-                    <h6 className="text-1xl font-normal">Dias</h6>
-                    <h1 className="text-4xl font-extrabold">{dias}</h1>
+                    <h6 className="sm:text-1xl text-base font-normal">Dias</h6>
+                    <h1 className="sm:text-4xl  text-lg font-extrabold">{dias}</h1>
                 </span>
                 <span className="flex item-center justify-center flex-col text-center  -space-y-2">
-                    <h6 className="text-1xl font-normal">Horas</h6>
-                    <h1 className="text-4xl font-extrabold">{horas}</h1>
+                    <h6 className="sm:text-1xl text-base font-normal">Horas</h6>
+                    <h1 className="sm:text-4xl  text-lg font-extrabold">{horas}</h1>
                 </span>
                 <span className="flex item-center justify-center  text-center flex-col -space-y-2">
-                    <h6 className="text-1xl font-normal">Minutos</h6>
-                    <h1 className="text-4xl font-extrabold">{minutos}</h1>
+                    <h6 className="sm:text-1xl text-base font-normal">Minutos</h6>
+                    <h1 className="sm:text-4xl  font-extrabold">{minutos}</h1>
                 </span>
                 <span className="flex item-center justify-center flex-col text-center  -space-y-2">
-                    <h6 className="text-1xl font-normal">Segundos</h6>
-                    <h1 className="text-4xl font-extrabold">{segundos}</h1>
+                    <h6 className="sm:text-1xl text-base font-normal">Segundos</h6>
+                    <h1 className="sm:text-4xl font-extrabold">{segundos}</h1>
                 </span>
             </div>
         </header>
