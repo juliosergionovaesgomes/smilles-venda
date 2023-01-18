@@ -30,12 +30,12 @@ const BioComponent = () => {
                     precisar pagar mais caro por isso.
                 </p>
                 <div className="w-full flex items-center justify-center pt-4">
-                    <button
+                    <a href='https://pay.kiwify.com.br/TdpNeKa' target={"_blank"}
                         className="z-50  text-sm uppercase font-bold text-black  rounded-lg p-4 hover:scale-90"
                         style={{ background: "#1ED760" }}
                     >
                         Acessar conteúdo.
-                    </button>
+                    </a>
                 </div>
             </div>
             <div className="w-full h-full lg:px-32 px-12 py-5  flex flex-col items-center justify-center">

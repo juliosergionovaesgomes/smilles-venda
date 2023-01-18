@@ -15,6 +15,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+    "typeRoots": [".dist/index.d.ts"],
     "jsx": "react-jsx",
     "paths": {
       "@app/*": ["./src/app/*"],
@@ -25,7 +26,7 @@
       "@assets/*": ["./src/assets/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "index.ts"],
   "references": [
     {
       "path": "./tsconfig.node.json"
