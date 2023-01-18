@@ -18,6 +18,10 @@ const Home = () => {
             {/* Dúvidas Frequents */}
             <Duvidas />
 
+            <footer className="h-20 w-full text-center">
+                <h1 className="font-medium"> Copyright &copy; 2023-2025, Todos os direitos reservados  por<a style={{ color: "#f9004d" }} href="https://ocodigodasmilhas.com"> o codigo das milhas.</a></h1>
+            </footer>
+
         </div >
     );
 };

@@ -3,7 +3,7 @@ import mokup from "@assets/images/mokup.png";
 
 const PlansComponent = () => {
     return (
-        <div className="w-full h-screen  py-8 flex  flex-col text-white items-center justify-center px-10  text-center">
+        <div id="access" className="w-full h-screen  py-8 flex  flex-col text-white items-center justify-center px-10  text-center">
             <img src={mokup} alt="" className="object-contain w-96 " />
             <div className="flex w-full items-center justify-center flex-col space-y-4">
                 <h1 className="text-3xl lg:text-4xl  font-bold leading-10 text-center" >Tudo isso por um <br />preço justo!</h1>
@@ -16,15 +16,16 @@ const PlansComponent = () => {
                     <br />
                     <span className="text-lg font-bold">ou <span>R$97,00</span> à vista</span>
                 </div>
-                <button
+                <a href='https://pay.kiwify.com.br/TdpNeKa' target={"_blank"}
                     className="z-50  text-sm uppercase font-bold text-black  rounded-lg p-4 hover:scale-90"
                     style={{ background: "#1ED760" }}
                 >
                     Acessar conteúdo.
-                </button>
+                </a>
                 <p className="w-2/2 text-center text-base  pb-10 lg:text-lg">Você terá um ano de acesso ao curso podendo assistir aonde<br /> e quando quiser com suporte a todas as aulas. </p>
             </div>
         </div>)
 }
 
 export default PlansComponent
+// 

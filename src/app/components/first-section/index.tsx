@@ -12,7 +12,7 @@ const FirstComponent = () => {
                     className=" w-full  uppercase  text-start "
                     style={{ zIndex: 123121414 }}
                 >
-                    <h1 className="text-6xl font-bold" >
+                    <h1 className="text-6xl  font-bold" >
                         O<span style={{ color: "#f9004d" }}> Código</span> <br /> das
                         Milhas
                     </h1>
@@ -21,12 +21,12 @@ const FirstComponent = () => {
                         refém de tarifas flexíveis!
                     </span>
                 </h1>
-                <button
+                <a href='#access'
                     className="text-sm uppercase   top-42 -bottom-32 font-bold text-black  rounded-lg p-4 hover:scale-90"
                     style={{ background: "#1ED760" }}
                 >
                     Acessar conteúdo.
-                </button>
+                </a>
             </div>
             <div className="w-full h-full  relative  lg:static ">
                 <img
