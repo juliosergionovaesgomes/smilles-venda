@@ -4,7 +4,7 @@ import { GoCreditCard } from 'react-icons/go'
 
 const BioComponent = () => {
     return (
-        <div className="w-full h-full flex   flex-wrap lg:flex-nowrap items-center justify-center  bg-neutral-black flex-row">
+        <div className="w-full h-full flex  py-8 flex-wrap lg:flex-nowrap items-center justify-center  bg-neutral-black flex-row">
             <div className="w-full h-full   flex item-center justify-center flex-col py-10 text-center px-20  space-y-4 ">
                 <h1
                     className=" text-2xl sm:text-3xl text-center font-bold "
@@ -15,18 +15,18 @@ const BioComponent = () => {
                     <br />
                 </h1>
                 <p className="text-justify text-sm sm:text-lg leading-6">
-                    Sou Iago Novais, expert em acúmulos de pontos e milhas, já
-                    movimentei mais de 1 milhão de milhas nos ultimos 4 meses.
+                    O Minerador de milhas, Iago Novais,  expert em acúmulos de pontos e milhas, já
+                    movimentou mais de 1 milhão de milhas nos últimos meses.
                     <br />
                     <br />
-                    Com este método, me possibilitei de conhecer Portugal, França,
-                    Inglaterra, Marrocos e Itália além de me abrir portas para embarcar
-                    de Classe Executiva para o México com tarifas mais baratas do que de
+                    Este método o possibilitou de conhecer Portugal, França,
+                    Inglaterra, Marrocos e Itália além de abrir portas para embarcar
+                    em Classe Executiva para Cancún no México com tarifas mais baratas do que dos
                     viajantes da Classe Econômica.
                     <br />
                     <br />
-                    Através disso, criei o método O Código das MIlhas, para que você
-                    também aproveite desses benefícios de forma estratégica sem sem
+                    Através disso, disponibilizou o método Minerador das Milhas, para que você
+                    também aproveite desses benefícios de forma estratégica e sem
                     precisar pagar mais caro por isso.
                 </p>
                 <div className="w-full flex items-center justify-center pt-4">
@@ -74,26 +74,26 @@ const BioComponent = () => {
 
                         {(element === 1 && (
                             <span>
-                                <span className="text-2xl font-bold">Pré Imersão</span> <br />{" "}
-                                <span className="text-1xl">Nivelamento</span>
+                                <span className="text-2xl font-bold">Cartões</span> <br />{" "}
+                                <span className="text-1xl">Os melhores cartões isentos de anuidades.</span>
                             </span>
                         )) ||
                             (element === 2 && (
                                 <span>
-                                    <span className="text-2xl font-bold">Pré Imersão</span>{" "}
-                                    <br /> <span className="text-1xl">Nivelamento</span>
+                                    <span className="text-2xl font-bold">Pontos e milhas</span>{" "}
+                                    <br /> <span className="text-1xl">Acumulos e multiplicações.</span>
                                 </span>
                             )) ||
                             (element === 3 && (
                                 <span>
-                                    <span className="text-2xl font-bold">Pré Imersão</span>{" "}
-                                    <br /> <span className="text-1xl">Nivelamento</span>
+                                    <span className="text-2xl font-bold">Passagens</span>{" "}
+                                    <br /> <span className="text-1xl">Pesquisas e emissões.</span>
                                 </span>
                             )) ||
                             (element === 4 && (
                                 <span>
-                                    <span className="text-2xl font-bold">Pré Imersão</span>{" "}
-                                    <br /> <span className="text-1xl">Nivelamento</span>
+                                    <span className="text-2xl font-bold">Cashback</span>{" "}
+                                    <br /> <span className="text-1xl">Retorno sobre suas compras.</span>
                                 </span>
                             ))}
                     </div>

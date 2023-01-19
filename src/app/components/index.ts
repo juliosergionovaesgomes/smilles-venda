@@ -5,3 +5,4 @@ export { default as Conteudo } from "./conteudo";
 export { default as Planos } from "./planos";
 export { default as Garantia } from "./garantia";
 export { default as Duvidas } from "./duvidas";
+export { default as Footer } from "./footer";

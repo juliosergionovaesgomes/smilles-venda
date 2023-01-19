@@ -17,7 +17,7 @@ const GarantiaComponent = () => {
           Agora só depende de você, ou você entra e aprende ou vai continuar assistindo
           na plateia.
         </p>
-        <p className="text-sm lg:text-md leading-1 "> Te espero no Código das Milhas.</p>
+        <p className="text-sm lg:text-md leading-1 "> Te espero na mina.</p>
       </div>
     </div>
   )

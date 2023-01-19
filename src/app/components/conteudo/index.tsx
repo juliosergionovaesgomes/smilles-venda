@@ -4,32 +4,31 @@ const modulos = [
     {
         modulo: '1',
         title1: 'Introdução ao',
-        title2: 'Mundo das Milhas'
+        title2: 'mundo das milhas'
     },
     {
         modulo: '2',
-        title1: 'Introdução ao',
-        title2: 'Código das Milhas'
+        title1: 'Programas',
+        title2: 'e estratégias'
     },
     {
         modulo: '3',
-        title1: 'Introdução ao',
-        title2: 'Código das Milhas'
+        title1: 'Roteiros',
+        title2: 'e emissões'
     },
     {
         modulo: '4',
-        title1: 'Introdução ao',
-        title2: 'Código das Milhas',
+        title1: 'Cartôes',
+        title2: 'e benefícios',
     }
 ]
 const ContentComponent = () => {
     return (
-        <div className="w-full   h-full lg:h-screen items-center flex-wrap flex justify-center  space-y-8 py-4  ">
+        <div className="w-full  my-4  h-full lg:h-screen items-center flex-wrap flex justify-center  space-y-8   ">
             <div className="text-center w-full flex flex-col justify-center items-center ">
                 <h1 className="  w-96 xl:w-2/5 uppercase text-xl lg:text-2xl font-bold text-center tracking-tight">
-                    O Que você vai aprender no curso O Código das Milhas ?
+                    O Que você vai aprender no treinamento ?
                 </h1>
-                <h6 className="text-lg   ">afwfawfçojafçojaçofjjf o</h6>
             </div>
             <div className="flex  flex-wrap  justify-center items-center   gap-5 lg:gap-10 ">
                 {
@@ -43,7 +42,7 @@ const ContentComponent = () => {
                                 </div>
                             </div>
                         </div>
-                        <button className="w-full animate-pulse px-4 py-2 text-xs mt-3 rounded-md border border-neutral-800 bg-neutral-900 " style={{ fontFamily: "SoulcraftGX", }}>Acessar</button>
+                        <a href="#access" className="w-full animate-pulse px-4 py-2 text-xs text-center mt-3 rounded-md border border-neutral-800 bg-neutral-900 " style={{ fontFamily: "SoulcraftGX", }}>Acessar</a>
                     </div>
                     )
                 }
