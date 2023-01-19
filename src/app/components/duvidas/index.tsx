@@ -34,8 +34,8 @@ const DuvidasComponents = () => {
         <div className="w-full  min-h-screen flex flex-col justify-center items-center space-y-12 px-4 lg:px-40 py-10 text-center my-8">
             <h1 className="font-bold text-4xl ">Dúvidas frequentes:</h1>
             <div className="lg:w-2/3 px-2 space-y-2">
-                {duvidas.map(item =>
-                    <Disclosure >
+                {duvidas.map((item, index) =>
+                    <Disclosure key={index}>
                         {({ open }) => (
                             <>
                                 <Disclosure.Button className="flex w-full justify-between rounded-lg bg-white px-4 py-2 text-left text-sm font-medium ">

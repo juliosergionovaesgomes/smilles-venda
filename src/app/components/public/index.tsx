@@ -1,9 +1,10 @@
 import React from 'react'
 import { AiOutlineCheckCircle } from 'react-icons/ai'
+import { Link } from 'react-scroll'
 
 const PublicComponent = () => {
     return (
-        <div className="w-full  h-screen flex  items-center justify-center space-y-6  flex-col ">
+        <div className="w-full  h-full flex  items-center justify-center space-y-6  flex-col ">
             <h1
                 className=" text-2xl sm:text-4xl w-full  text-white font-bold  text-center"
             >
@@ -11,7 +12,7 @@ const PublicComponent = () => {
                 <span style={{ color: "#f9004d" }}>EXCLUSIVAMENTE</span> PARA VOCÊ
                 QUE:
             </h1>
-            <div className="px-10 flex items-center justify-center flex-row   ">
+            <div className="px-10 flex items-center justify-center flex-row">
                 <ul className="text-sm sm:text-lg">
                     <li className="flex items-center justify-start flex-row space-x-2 py-2  ">
                         <AiOutlineCheckCircle style={{ color: "#f9004d" }} />
@@ -42,12 +43,14 @@ const PublicComponent = () => {
                     </li>
                 </ul>
             </div>
-            <div
-                className="text-sm uppercase font-bold text-black  rounded-lg p-4  hover:scale-90"
-                style={{ background: "#1ED760" }}
-            >
-                Acessar conteúdo.
-            </div>
+            <Link activeClass="active" to="plans" spy smooth duration={500}>
+                <button
+                    className="text-sm uppercase font-bold text-black  rounded-lg p-4  hover:scale-90"
+                    style={{ background: "#1ED760" }}
+                >
+                    Acessar conteúdo.
+                </button>
+            </Link>
         </div>)
 }
 
