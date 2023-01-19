@@ -1,5 +1,6 @@
 import React from "react";
 import { Bio, Conteudo, Duvidas, FirstSection, Footer, Garantia, Planos, Public } from "@app/components";
+import { Element } from "react-scroll";
 const Home = () => {
     return (
         <div className="text-white w-full flex items-center justify-center flex-col ">
@@ -12,7 +13,9 @@ const Home = () => {
             {/* Conteúdo */}
             <Conteudo />
             {/* Planos  */}
-            <Planos />
+            <Element className="section" name="plans">
+                <Planos />
+            </Element>
             {/* Garantia */}
             <Garantia />
             {/* Dúvidas Frequents */}

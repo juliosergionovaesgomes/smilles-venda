@@ -4,7 +4,7 @@ import selo from "@assets/images/selo.png";
 const GarantiaComponent = () => {
   return (
 
-    <div className="w-full  min-h-screen py-4 flex flex-col lg:flex-row  lg:flex-nowrap justify-center items-center">
+    <div className="w-full  h-full py-4 flex flex-col lg:flex-row  lg:flex-nowrap justify-center items-center">
 
       <img src={selo} alt="Selo de Garantia" className="w-80 h-80 animate-pulse" />
       <div className=" px-12 lg:px-0 lg:w-2/5 space-y-4">

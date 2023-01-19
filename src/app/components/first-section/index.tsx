@@ -1,5 +1,6 @@
 import React from 'react'
 import image from "@assets/images/Thinking-Man-Transparent.jpeg";
+import { Link } from 'react-scroll';
 
 const FirstComponent = () => {
     return (
@@ -8,7 +9,7 @@ const FirstComponent = () => {
             style={{ height: "calc(100vh - 80px)" }}
         >
             <div className="w-full max-h-full flex  items-start justify-center flex-col px-10 lg:px-20 space-y-8 absolute lg:static z-50 lg:z-0">
-                <h1
+                <span
                     className=" w-full  uppercase  text-start "
                     style={{ zIndex: 123121414 }}
                 >
@@ -20,13 +21,16 @@ const FirstComponent = () => {
                         Aprenda viajar barato e não fique <br />
                         refém de tarifas flexíveis!
                     </span>
-                </h1>
-                <a href='#access'
-                    className="text-sm uppercase   top-42 -bottom-32 font-bold text-black  rounded-lg p-4 hover:scale-90"
-                    style={{ background: "#1ED760" }}
-                >
-                    Acessar conteúdo.
-                </a>
+                </span>
+                <Link activeClass="active" to="plans" spy smooth duration={500}>
+                    <button
+                        className="text-sm uppercase   top-42 -bottom-32 font-bold text-black  rounded-lg p-4 hover:scale-90"
+                        style={{ background: "#1ED760" }}
+                    >
+                        Acessar conteúdo.
+                    </button>
+                </Link>
+
             </div>
             <div className="w-full h-full  relative  lg:static ">
                 <img
