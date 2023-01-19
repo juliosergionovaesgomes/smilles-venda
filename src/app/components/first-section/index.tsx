@@ -13,7 +13,7 @@ const FirstComponent = () => {
                     style={{ zIndex: 123121414 }}
                 >
                     <h1 className="text-6xl  font-bold" >
-                        O<span style={{ color: "#f9004d" }}> Código</span> <br /> das
+                        O<span style={{ color: "#f9004d" }}> Minerador</span> <br /> das
                         Milhas
                     </h1>
                     <span className="text-2xl font-normal">

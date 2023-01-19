@@ -15,23 +15,22 @@ const PublicComponent = () => {
                 <ul className="text-sm sm:text-lg">
                     <li className="flex items-center justify-start flex-row space-x-2 py-2  ">
                         <AiOutlineCheckCircle style={{ color: "#f9004d" }} />
-                        <p>É iniciante e não sabe como começar a acumular milhas.</p>
+                        <p>É iniciante e quer começar do absoluto zero.</p>
                     </li>
                     <li className="flex items-center justify-start flex-row space-x-2 py-2  ">
                         <AiOutlineCheckCircle style={{ color: "#f9004d" }} />
-                        <p>Sonha viajar o mundo, mesmo que isso não pareça possível.</p>
+                        <p>Já conhece o básico e precisa aprimorar seu conhecimento.</p>
                     </li>
                     <li className="flex items-center justify-start flex-row space-x-2 py-2  ">
                         <AiOutlineCheckCircle style={{ color: "#f9004d" }} />
                         <p>
-                            Quer descobrir os códigos das compras online com descontos e
-                            cashbacks.
+                            Quer viajar em alta temporada sem pagar a mais por isso.
                         </p>
                     </li>
                     <li className="flex items-center justify-start flex-row space-x-2 py-2  ">
                         <AiOutlineCheckCircle style={{ color: "#f9004d" }} />
                         <p>
-                            Quer descobrir como usar os gastos do dia a dia em seu favor.
+                            Quer visitar as salas vip's dos aeroportos gratuitamente.
                         </p>
                     </li>
                     <li className="flex items-center justify-start flex-row space-x-2 py-2  ">
