@@ -5,7 +5,7 @@ import { Link } from 'react-scroll'
 
 const BioComponent = () => {
     return (
-        <div className="w-full h-full flex  py-8 flex-wrap lg:flex-nowrap items-center justify-center  bg-neutral-black flex-row">
+        <div className="w-full h-screen flex  py-8 flex-wrap lg:flex-nowrap items-center justify-center  bg-neutral-black flex-row">
             <div className="w-full h-full   flex item-center justify-center flex-col py-10 text-center px-20  space-y-4 ">
                 <h1
                     className=" text-2xl sm:text-3xl text-center font-bold "
@@ -33,8 +33,7 @@ const BioComponent = () => {
                 <div className="w-full flex items-center justify-center pt-4">
                     <Link activeClass="active" to="plans" spy smooth duration={500}>
                         <button
-                            className="z-50  text-sm uppercase font-bold text-black  rounded-lg p-4 hover:scale-90"
-                            style={{ background: "#1ED760" }}
+                            className="z-50  text-sm uppercase font-bold   rounded-lg p-4 hover:scale-90 bg-primary text-white"
                         >
                             Acessar conteúdo.
                         </button>
@@ -52,26 +51,23 @@ const BioComponent = () => {
                     >
                         {(element === 1 && (
                             <GoCreditCard
-                                className="text-5xl font-semibold "
-                                style={{ color: "#f9004d" }}
+                                className="text-5xl font-semibold text-primary"
+                        
                             />
                         )) ||
                             (element === 2 && (
                                 <GiCoins
-                                    className="text-5xl font-semibold "
-                                    style={{ color: "#f9004d" }}
+                                    className="text-5xl font-semibold text-primary "
                                 />
                             )) ||
                             (element === 3 && (
                                 <GiCommercialAirplane
-                                    className="text-5xl font-semibold "
-                                    style={{ color: "#f9004d" }}
+                                    className="text-5xl font-semibold  text-primary "
                                 />
                             )) ||
                             (element === 4 && (
                                 <GiTakeMyMoney
-                                    className="text-5xl font-semibold "
-                                    style={{ color: "#f9004d" }}
+                                    className="text-5xl font-semibold text-primary "
                                 />
                             ))}
 

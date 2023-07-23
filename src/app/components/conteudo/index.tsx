@@ -25,7 +25,7 @@ const modulos = [
 ]
 const ContentComponent = () => {
     return (
-        <div className="w-full   h-full items-center flex-wrap flex justify-center  space-y-8">
+        <div className="w-full   h-screen items-center flex-wrap flex justify-center  space-y-8">
             <div className="text-center w-full flex flex-col justify-center items-center ">
                 <h1 className="  w-96 xl:w-2/5 uppercase text-xl lg:text-2xl font-bold text-center tracking-tighter">
                     O Que você vai aprender no treinamento?
@@ -36,8 +36,8 @@ const ContentComponent = () => {
                     modulos.map((module, index) => <div key={index} className="w-56 h-96  flex  flex-col items-center justify-end ">
                         <div className="flex w-full h-full border rounded-lg shadow-sm border-neutral-800 flex-col relative items-center justify-end ">
                             <img src={image} alt="" className="h-full w-full object-cover object-center " />
-                            <div className="flex w-full h-full flex-col items-center bg-neutral-900 bg-opacity-60 justify-end absolute z-50">
-                                <span className="px-2 font-bold rounded-md  shadow-sm flex items-center justify-center  text-black text-sm " style={{ backgroundColor: "#f9004d" }}>MÓDULO {module.modulo}</span>
+                            <div className="flex w-full h-full flex-col items-center bg-neutral-900 bg-opacity-60 justify-end absolute ">
+                                <span className="px-2 font-bold rounded-md  shadow-sm flex items-center justify-center  text-black text-sm bg-primary ">MÓDULO {module.modulo}</span>
                                 <div className="flex  flex-col items-center justify-center pb-2 " >
                                     <h4 className="text-center font-semibold text-lg leading-6">{module.title1}<br />{module.title2}</h4>
                                 </div>

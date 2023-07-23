@@ -1,71 +1,54 @@
 
 import React, { useState, useEffect } from "react"
+import Logo from '@assets/images/Logo_Prancheta 1.png'
+import { Link } from "react-scroll"
 const FixHeaderComponent = () => {
-    const [dias, setDias] = useState<number>()
-    const [horas, setHoras] = useState<number>()
-    const [minutos, setMinutos] = useState<number>()
-    const [segundos, setSegundos] = useState<number>()
-    const [mes] = useState(11)
-    const [diaDefault] = useState(31)
-
-    const contador = () => {
-        let now = new Date();
-        let eventDate = new Date(now.getFullYear(), mes, diaDefault);
-
-        let currentTime = now.getTime();
-        let eventTime = eventDate.getTime();
-        let remTime = eventTime - currentTime;
-
-
-        let s = Math.floor(remTime / 1000)
-        let m = Math.floor(s / 60)
-        let h = Math.floor(m / 60)
-        let d = Math.floor(h / 24)
-
-        h %= 24
-        m %= 60;
-        s %= 60;
-
-        h = h < 10 ? 0 + h : h;
-        m = m < 10 ? 0 + m : m;
-        s = s < 10 ? 0 + s : s;
-
-
-        setHoras(h)
-        setMinutos(m)
-        setDias(d)
-        setSegundos(s)
-        setTimeout(contador, 1000);
-    }
+    const [scrollPoY, setScrollPoY] = useState(false)
+    const styleTop = `text-black text-md hover:text-white hover:scale-95 `
+    const styleBottom = `text-white text-md hover:text-primary `
 
     useEffect(() => {
-        contador()
-    })
+        window.addEventListener("scroll", () =>
+            setScrollPoY(window.pageYOffset > 200)
+        );
+
+    }, [window.scrollY])
 
     return (
-        <header className="w-full h-20   flex justify-center flex-col sm:flex-row items-center space-x-3 " style={{ background: '#f9004d' }}>
-            <div>
-                <h1 className="text-black text-base sm:text-2xl font-bold  ">AS VAGAS ENCERRAM EM :</h1>
-            </div>
-            <div className="font-semibold text-black  flex flex-row space-x-3">
-                <span className="flex item-center justify-center flex-col text-center  -space-y-2">
-                    <h6 className="sm:text-1xl text-base font-normal">Dias</h6>
-                    <h1 className="sm:text-4xl  text-lg font-extrabold">{dias}</h1>
-                </span>
-                <span className="flex item-center justify-center flex-col text-center  -space-y-2">
-                    <h6 className="sm:text-1xl text-base font-normal">Horas</h6>
-                    <h1 className="sm:text-4xl  text-lg font-extrabold">{horas}</h1>
-                </span>
-                <span className="flex item-center justify-center  text-center flex-col -space-y-2">
-                    <h6 className="sm:text-1xl text-base font-normal">Minutos</h6>
-                    <h1 className="sm:text-4xl  font-extrabold">{minutos}</h1>
-                </span>
-                <span className="flex item-center justify-center flex-col text-center  -space-y-2">
-                    <h6 className="sm:text-1xl text-base font-normal">Segundos</h6>
-                    <h1 className="sm:text-4xl font-extrabold">{segundos}</h1>
-                </span>
-            </div>
-        </header>
+        <header id="header" className={`w-full h-20  sm:fixed md:fixed top-0  right-0 left-0  py-12  px-40  ${scrollPoY ? "bg-[#000000] transition-all duration-150" : "bg-primary/80"} z-50 flex  flex-col sm:flex-row items-center  justify-between space-x-3 `
+        } >
+            <Link to="/" className="">
+                <img src={Logo} alt="" className="w-60" />
+            </Link>
+            <ul className={" font-semibold flex gap-x-8  z-50 "} >
+                <li className="hover:scale-90 cursor-pointer">
+                    <Link className={`${scrollPoY ? styleBottom : styleTop}`} activeClass="active" to="home" spy smooth duration={500}>
+                        Home
+                    </Link>
+                </li>
+                <li className="hover:scale-90 cursor-pointer" >
+                    <Link className={`${scrollPoY ? styleBottom : styleTop}`} activeClass="active" to="public" spy smooth duration={500}>
+                        Mentoria
+                    </Link>
+                </li>
+                <li className="hover:scale-90 cursor-pointer" >
+                    <Link className={`${scrollPoY ? styleBottom : styleTop}`} activeClass="active" to="about" spy smooth duration={500}>
+                        Travel Pro
+                    </Link>
+                </li>
+                <li className="hover:scale-90 cursor-pointer">
+                    <Link className={`${scrollPoY ? styleBottom : styleTop}`} activeClass="active" to="content" spy smooth duration={500}>
+                        conteúdo
+                    </Link>
+                </li>
+                <li className="hover:scale-90 cursor-pointer" >
+                    <Link className={`${scrollPoY ? styleBottom : styleTop}`} activeClass="active" to="contact" spy smooth duration={500}>
+                        Contato
+                    </Link>
+                </li>
+            </ul>
+
+        </header >
     )
 
 }

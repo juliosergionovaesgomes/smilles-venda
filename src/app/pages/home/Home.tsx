@@ -1,17 +1,30 @@
 import React from "react";
 import { Bio, Conteudo, Duvidas, FirstSection, Footer, Garantia, Planos, Public } from "@app/components";
 import { Element } from "react-scroll";
+import InfoModel from "@app/components/modal/InfoModal";
+import { FixHeader } from "@app/components/header";
 const Home = () => {
     return (
         <div className="text-white w-full flex items-center justify-center flex-col ">
             {/* Home */}
-            <FirstSection />
+            <FixHeader />
+            <Element className="section w-full" name="home" >
+                <FirstSection />
+            </Element>
             {/* Publico alvo  */}
-            <Public />
+            <Element className="section" name="public">
+                <Public />
+            </Element>
+
             {/* Biografia */}
-            <Bio />
+            <Element className="section" name="about">
+                <Bio />
+            </Element>
             {/* Conteúdo */}
-            <Conteudo />
+            <Element className="section" name="content">
+                <Conteudo />
+            </Element>
+
             {/* Planos  */}
             <Element className="section" name="plans">
                 <Planos />
@@ -22,6 +35,8 @@ const Home = () => {
             <Duvidas />
             {/* Footer - Rodapé*/}
             <Footer />
+            <InfoModel />
+
         </div >
     );
 };

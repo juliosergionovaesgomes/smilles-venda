@@ -3,15 +3,14 @@ import { routes } from '@src/routes/route'
 import { RouterProvider } from 'react-router-dom'
 import { FixHeader } from '../header'
 import backgroundURL from '@assets/images/Home.png'
+import InfoModel from '../modal/InfoModal'
 const LayoutComponent = () => {
   return (
-    <div className='w-full ' style={{ backgroundImage: `url(${backgroundURL})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundColor: ' #1a1a1a' }}>
+    <div className='w-full  bg-background bg-[#000] bg-cover bg-no-repeat' >
       {/* header  */}
-      <div className='w-full' style={{ height: '80px' }}>
-        <FixHeader />
-      </div>
-      {/* content */}
+      s      {/* content */}
       <RouterProvider router={routes} />
+
     </div>
   )
 }
